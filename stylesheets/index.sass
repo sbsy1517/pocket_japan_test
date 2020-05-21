@@ -14,6 +14,8 @@ $color_white: #f8f8f8
 $color_black: #262626
 $color_ltGrey: #b8b8b8
 $color_grey: #5e5e5e
+$color_yellow: #ffcd38
+$color_dkYellow: #e6ac00
     
 *
     position: relative
@@ -21,7 +23,8 @@ html,body
     width: 100%
     overflow-x: hidden
     font-family: 'Noto Sans TC', sans-serif
-
+.clearfix
+    clear: both
 section#header
     
     background-image: url(../source/img/3-2.jpg)
@@ -113,6 +116,100 @@ section#intro
             color: $color_white
             transition-duration: 0.2s
             
+section#question
+    background-image: url('../source/img/2.jpg')
+    height: 100vh
+    display: none
 
-        
+    .container
+        // border: 1px solid #000
+        background-color: rgba(248, 248, 248, 0.6)
+        padding: 60px 
+        +y-center
+        .number
+            font-size: 60px
+            font-weight: 700
+        .form
+            // border: 1px solid #000
+            margin-top: 50px
+            .question
+                margin-bottom: 30px
+            input
+                margin: 0px 15px
+            label
+                margin-bottom: 20px
+                font-size: 30px
+
+            img
+                position: absolute
+                height: 80%
+                bottom: 0px
+                right: 60px
+        .wrap
+            // border: 1px solid #000
+            margin-top: 80px
+            display: flex
+            justify-content: space-between
+            .btn
+                // border: 1px solid #000
+                // display: block
+                // float: right
+                background-color: $color_yellow
+                font-weight: 500
+                font-size: 30px
+                padding: 10px 30px 
+                right: 0px
+                &:hover
+                    background-color: $color_dkYellow
+                    color: $color_white
+    .container#q-one
+        .wrap
+            justify-content: flex-end
+    #q-two,#q-three,#q-four,#q-five,#q-six,#q-seven
+        display: none
+
+section#result
+    display: none
+    height: 100vh
+    background-image: url('../source/img/4-1.jpg')
+    background-color: cover
+    .wrap
+        +y-center
+        h3
+            text-align: center
+            font-size: 30px
+            margin-bottom: 40px
+        .container.part-one
+            display: flex
+            justify-content: space-around
+            height: 350px
+            
+            .wrap
+                border: 1px solid #000
+                padding: 20px
+                .h4
+                    font-weight: 500
+                p
+                    margin-top: 20px
+                    
+                    
+            .wrap
+                width: 45%
+
+            img
+                height: 100%
+        .container.part-two
+            margin-top: 40px
+            display: flex
+            justify-content: space-around
+            .btn
+                background-color: $color_yellow
+                font-weight: 500
+                font-size: 30px
+                padding: 10px 30px 
+                right: 0px
+                &:hover
+                    background-color: $color_dkYellow
+                    color: $color_white
+
     
