@@ -78,43 +78,42 @@ section#header
             justify-content: center
 section#intro
     height: 100vh
-    padding-top: 100px
+    // padding-top: 100px
     // display: flex
     // flex-direction: column
     background-image: url(../source/img/4-2.jpg)
-    .container.part-one
-        display: flex
-        justify-content: space-around
-        height: 350px
-        .intro
+    .container
+        +y-center
+        .part-one
+            display: flex
+            justify-content: space-around
+            .intro
+                border: 1px solid #000
+                padding: 20px
+                h2
+                    font-size: 30px
+                    font-weight: 500
+                p
+                    margin-top: 20px
+            .intro,iframe
+                width: 45%
+                height: auto
+        .illustration
+            display: flex
+            justify-content: space-around
+            margin-top: 40px
+            img
+                height: 100px
+            
+        a.btn
+            display: inline-block
+            +x-center
+            margin-top: 60px
             border: 1px solid #000
-            padding: 20px
-            h2
-                font-size: 30px
-                font-weight: 500
-            p
-                margin-top: 20px
-                
-                
-        .intro,iframe
-            width: 45%
-            height: auto
-    .illustration
-        display: flex
-        justify-content: space-around
-        margin-top: 40px
-        img
-            height: 100px
-        
-    a.btn
-        display: inline-block
-        +x-center
-        margin-top: 60px
-        border: 1px solid #000
-        &:hover
-            background-color: $color_grey
-            color: $color_white
-            transition-duration: 0.2s
+            &:hover
+                background-color: $color_grey
+                color: $color_white
+                transition-duration: 0.2s
             
 section#question
     background-image: url('../source/img/2.jpg')
@@ -211,5 +210,46 @@ section#result
                 &:hover
                     background-color: $color_dkYellow
                     color: $color_white
-
-    
+section#article
+    // display: block
+    height: 100vh
+    display: none
+    .container
+        h3
+            text-align: center
+            font-size: 30px
+            font-weight: 500
+        +y-center
+        .wrap
+            display: flex
+            justify-content: space-around
+            margin-top: 50px
+            .article
+                border: 1px solid #000
+                width: 30%
+                text-decoration: none
+                color: $color_black
+                .article-img
+                    width: 100%
+                    height: 200px
+                    background-image: url("../source/img/test2.png")
+                    background-size: cover
+                    background-position: center center
+                    margin-top: 20px
+                p
+                    margin-top: 20px
+                .illustration
+                    +x-center
+                    width: auto
+                    height: 150px
+        .logo-link
+            display: flex
+            justify-content: center
+            margin-top: 50px
+footer
+    display: none
+    padding: 100px
+    background-color: $color_white
+    img
+        height: 200px
+        +x-center

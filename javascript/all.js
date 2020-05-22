@@ -78,3 +78,4 @@ $('.restart').on('click', function(e){
     $("section#article").hide();
     $('footer').hide();
 });
+$('.carousel').carousel()

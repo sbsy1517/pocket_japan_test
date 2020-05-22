@@ -24,12 +24,12 @@ html(lang="en")
                 img#human3(src="source/img/human3.png", alt="")
                 img#human4(src="source/img/human4.png", alt="")
         section#intro
-            .container.part-one
-                .intro
-                    h2 文案標題
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quia adipisci incidunt voluptas blanditiis suscipit dolores ducimus veritatis, sunt aspernatur molestiae nisi pariatur quibusdam, dicta modi harum totam quisquam? Voluptatibus?
-                iframe(src="https://www.youtube.com/embed/9aJVr5tTTWk", frameborder="0")
-            .container.part-two
+            .container
+                .part-one
+                    .intro
+                        h2 文案標題
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quia adipisci incidunt voluptas blanditiis suscipit dolores ducimus veritatis, sunt aspernatur molestiae nisi pariatur quibusdam, dicta modi harum totam quisquam? Voluptatibus?
+                    iframe(src="https://www.youtube.com/embed/9aJVr5tTTWk", frameborder="0")
                 .illustration
                     img(src="source/img/human3.png", alt="")
                     img(src="source/img/human3.png", alt="")
@@ -215,11 +215,91 @@ html(lang="en")
                     img(src="source/img/human3.png", alt="")
                 .container.part-two
                     a.btn.link(href="#") 你的調味料!
-                    a.btn.restart(href="#question") 再測一次
                     a.btn.share(href="#") 分享你的結果
+                    a.btn.restart(href="#question") 再測一次
+                    
 
         section#article
+            .container
+                h3 這裡還有更多調味料喔!    
+                .carousel.slide#carouselExampleIndicators(data-ride="carousel")
+                    ol.carousel-indicators
+                        li.active(data-target="#carouselExampleIndicators" data-slide-to="0")
+                        li(data-target="#carouselExampleIndicators" data-slide-to="1")
+                        li(data-target="#carouselExampleIndicators" data-slide-to="2")
+                        li(data-target="#carouselExampleIndicators" data-slide-to="3")
+                    .carousel-inner
+                        .carousel-item.active
+                            .wrap
+                                a(href="#").article.mr-4
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
+                                a(href="#").article.mr-4
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
+                                a(href="#").article
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 
+                        .carousel-item
+                            .wrap
+                                a(href="#").article.mr-4
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
+                                a(href="#").article.mr-4
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
+                                a(href="#").article
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 
+                        .carousel-item
+                            .wrap
+                                a(href="#").article.mr-4
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
+                                a(href="#").article.mr-4
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
+                                a(href="#").article
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 
+                        .carousel-item
+                            .wrap
+                                a(href="#").article.mr-4
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
+                                a(href="#").article.mr-4
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
+                                a(href="#").article
+                                    img.illustration(src="source/img/human3.png", alt="")
+                                    .article-img
+                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 
+                    a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+                        span.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next
+                .logo-link
+                    img.mr-5(src="source/img/header_logo.jpg", alt="")
+                    img(src="source/img/header_logo.jpg", alt="")
+                
+
+
+
         footer
+            img(src="source/img/footer_logo.jpg", alt="")
 
 
         script(src="javascript/jquery.min.js")
