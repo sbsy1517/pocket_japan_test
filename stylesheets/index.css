@@ -122,21 +122,11 @@ section#intro .container .part-one {
 
 section#intro .container .part-one .intro {
   border: 1px solid #000;
-  padding: 20px;
-}
-
-section#intro .container .part-one .intro h2 {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-section#intro .container .part-one .intro p {
-  margin-top: 20px;
+  padding: 60px 20px;
 }
 
 section#intro .container .part-one .intro, section#intro .container .part-one iframe {
   width: 45%;
-  height: auto;
 }
 
 section#intro .container .illustration {
@@ -149,7 +139,7 @@ section#intro .container .illustration {
 }
 
 section#intro .container .illustration img {
-  height: 100px;
+  height: 140px;
 }
 
 section#intro .container a.btn {
@@ -204,13 +194,6 @@ section#question .container .form label {
   font-size: 30px;
 }
 
-section#question .container .form img {
-  position: absolute;
-  height: 80%;
-  bottom: 0px;
-  right: 60px;
-}
-
 section#question .container .wrap {
   margin-top: 80px;
   display: -webkit-box;
@@ -257,7 +240,7 @@ section#result .wrap {
           transform: translateY(-50%);
 }
 
-section#result .wrap h3 {
+section#result .wrap h2 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 40px;
@@ -317,6 +300,7 @@ section#result .wrap .container.part-two .btn:hover {
 
 section#article {
   height: 100vh;
+  display: none;
 }
 
 section#article .container {
@@ -325,7 +309,7 @@ section#article .container {
           transform: translateY(-50%);
 }
 
-section#article .container h3 {
+section#article .container h2 {
   text-align: center;
   font-size: 30px;
   font-weight: 500;
@@ -379,6 +363,7 @@ section#article .container .logo-link {
 }
 
 footer {
+  display: none;
   padding: 100px;
   background-color: #f8f8f8;
 }

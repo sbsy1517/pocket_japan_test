@@ -49,13 +49,11 @@ section#header
         font-size: 50px
         display: flex
         justify-content: center
-        // border: 1px solid #000
         color: $color_white
         font-weight: 700
         line-height: 1.5
         text-shadow: #262626 2px 2px 9px
     a
-        // border: 1px solid black
         margin-top: 100px
         display: inline-block
         text-decoration: none
@@ -78,9 +76,6 @@ section#header
             justify-content: center
 section#intro
     height: 100vh
-    // padding-top: 100px
-    // display: flex
-    // flex-direction: column
     background-image: url(../source/img/4-2.jpg)
     .container
         +y-center
@@ -89,21 +84,16 @@ section#intro
             justify-content: space-around
             .intro
                 border: 1px solid #000
-                padding: 20px
-                h2
-                    font-size: 30px
-                    font-weight: 500
-                p
-                    margin-top: 20px
+                padding: 60px 20px
             .intro,iframe
                 width: 45%
-                height: auto
+                height: 
         .illustration
             display: flex
             justify-content: space-around
             margin-top: 40px
             img
-                height: 100px
+                height: 140px
             
         a.btn
             display: inline-block
@@ -121,7 +111,6 @@ section#question
     display: none
 
     .container
-        // border: 1px solid #000
         background-color: rgba(248, 248, 248, 0.6)
         padding: 60px 
         +y-center
@@ -129,7 +118,6 @@ section#question
             font-size: 60px
             font-weight: 700
         .form
-            // border: 1px solid #000
             margin-top: 50px
             .question
                 margin-bottom: 30px
@@ -139,20 +127,12 @@ section#question
                 margin-bottom: 20px
                 font-size: 30px
 
-            img
-                position: absolute
-                height: 80%
-                bottom: 0px
-                right: 60px
+            
         .wrap
-            // border: 1px solid #000
             margin-top: 80px
             display: flex
             justify-content: space-between
             .btn
-                // border: 1px solid #000
-                // display: block
-                // float: right
                 background-color: $color_yellow
                 font-weight: 500
                 font-size: 30px
@@ -174,7 +154,7 @@ section#result
     background-color: cover
     .wrap
         +y-center
-        h3
+        h2
             text-align: center
             font-size: 30px
             margin-bottom: 40px
@@ -190,7 +170,6 @@ section#result
                     font-weight: 500
                 p
                     margin-top: 20px
-                    
                     
             .wrap
                 width: 45%
@@ -211,11 +190,10 @@ section#result
                     background-color: $color_dkYellow
                     color: $color_white
 section#article
-    // display: block
     height: 100vh
     display: none
     .container
-        h3
+        h2
             text-align: center
             font-size: 30px
             font-weight: 500

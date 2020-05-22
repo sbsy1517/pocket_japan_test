@@ -35,6 +35,7 @@ $('.next-7').on('click', function(e){
 $('.next-result').on('click', function(e){
     e.preventDefault();
     $("section#question").hide();
+    $('section#intro').hide();
     $("section#result").show();
     $("section#article").show();
     $("footer").show();
@@ -74,6 +75,7 @@ $('.restart').on('click', function(e){
     $('#q-one').show();
     $('#q-seven').hide();
     $("section#question").show();
+    $('section#intro').show();
     $("section#result").hide();
     $("section#article").hide();
     $('footer').hide();
