@@ -1,3 +1,4 @@
+// mixin position     
 @mixin center
     position: absolute
     left: 50%
@@ -9,14 +10,40 @@
 @mixin x-center
     left: 50%
     transform: translateX(-50%)
+@mixin xl
+    @media (max-width: 1440px)
+        @content
+@mixin lg 
+    @media (max-width: 1024px)
+        @content
+@mixin less-lg
+    @media (max-width: 996px)
+        @content
+@mixin md
+    @media (max-width: 768px)
+        @content
+@mixin sm
+    @media (max-width: 414px)
+        @content
+@mixin xm
+    @media (max-width: 375px)
+        @content
 
-$color_white: #f8f8f8 
+// mixin color
+
 $color_black: #262626
-$color_ltGrey: #b8b8b8
-$color_grey: #5e5e5e
 $color_yellow: #ffcd38
 $color_dkYellow: #e6ac00
-    
+
+//theme color
+$color_orange: #ffe8df
+$color_pink: #ffc1a8
+$color_dkPink: #ffa27d
+$color_white: #f8f8f8 
+$color_ltGrey: #f0f0f0
+$color_grey: #888888
+$color_red: #f70d28
+ 
 *
     position: relative
 html,body
@@ -25,41 +52,108 @@ html,body
     font-family: 'Noto Sans TC', sans-serif
 .clearfix
     clear: both
+
+
 section#header
-    
-    background-image: url(../source/img/3-2.jpg)
-    background-size: cover
-    height: 100vh
     display: flex
     flex-direction: column 
-    justify-content: center
+    // justify-content: center
+    height: 100vh
+    min-height: 840px
+    background-color: $color_orange
+    // background-image: url
+    +lg
+        justify-content: center
+        min-height: 1000px
+    +md
+        min-height: 768px
+    +sm
+        min-height: 736px
+        justify-content: space-around
+    +xm
+        min-height: 667px
+    a.logo
+        // position: absolute
+        top: 0px
+        align-self: center
+        padding: 50px
+        +sm
+            padding: 0
+        
+        img#logo-img
+            width: 200px
+            +xl
+                width: 150px
+            +lg
+                width: 250px
+            +sm
+                width: 150px
+            
+            // padding-bottom: 100px 
+            
     .illustration
         position: absolute
-        bottom: 0px
         display: flex
         justify-content: space-around
         flex-direction: row
         width: 100%
+        bottom: 0px
+
+        +md
+            width: auto
         img
-            
             height: 300px
+            +xl
+                height: 250px
+            +lg
+                height: 250px
+            +md
+                height: 200px
+            +sm
+                height: 300x
+        .undersm
+            +sm
+                display: none      
     h1 
-        text-align: center
-        padding: 30px
-        font-size: 50px
         display: flex
         justify-content: center
+        padding: 140px 30px
         color: $color_white
+        font-size: 50px
+        text-align: center
         font-weight: 700
         line-height: 1.5
-        text-shadow: #262626 2px 2px 9px
-    a
-        margin-top: 100px
+        letter-spacing: 2px
+        text-shadow: #262626 5px 5px 10px
+        background-image: url(../source/img/headerbg.png)
+        background-size: 1500px
+        background-position: center center
+        +xl
+            padding: 100px 30px
+        +lg
+            padding: 200px 30px
+        +md
+            font-size: 50px
+
+        +sm 
+            padding: 120px 10px
+            font-size: 25px
+        .bgcolor
+            position: absolute
+            width: 763px
+            height: 200px
+            background-color: rgba(255, 162, 125,0.5)
+            top: 0
+            +center
+            +sm
+                height: 150px
+    a.gotest
         display: inline-block
-        text-decoration: none
-        width: auto
         align-self: center
+        margin-top: 100px
+        width: auto
         color: $color_white
+        text-decoration: none
         text-shadow: #262626 1px 1px 5px
         transition-duration: 0.2s
         z-index: 5
@@ -68,79 +162,188 @@ section#header
             text-shadow: #262626 2px 2px 8px
             transform: translateY(10px)
             transition-duration: 0.2s
+        +xl
+            margin-top: 50px    
+        +lg
+            margin-top: 30px
         .lets_see 
             text-align: center
         .fas.fa-chevron-down
-            font-size: 50px
             display: flex
             justify-content: center
+            font-size: 50px
+        
 section#intro
     height: 100vh
-    background-image: url(../source/img/4-2.jpg)
+    min-height: 840px
+    background-image: url(../source/img/question-bg.png)
+    // background-color: $color_white
+    +lg
+        min-height: 1000px
+    +md
+        min-height: 768px
+    +sm
+        min-height: 736px
+    +xm
+        min-height: 667px
     .container
         +y-center
         .part-one
             display: flex
             justify-content: space-around
+            +lg
+                display: block
             .intro
-                border: 1px solid #000
+                width: 50%
+                // border: 1px solid #000
                 padding: 60px 20px
-            .intro,iframe
-                width: 45%
-                height: 
+                line-height: 40px
+                background-color: rgba(248, 248, 248, 0.7)
+                p
+                    font-size: 25px
+                    text-align: center
+                    letter-spacing: 1px
+                    line-height: 47px
+                    color: $color_black
+                    +lg
+                        font-size: 20px
+                    +sm
+                        font-size: 18px
+                        line-height: 30px
+                +xl
+                    padding: 30px 20px
+
+                +lg
+                    width: 100%
+                    padding:  20px
+                    text-align: center
+                    font-size: 20px
+                +sm 
+                    padding: 10px
+                    height: auto 
+                    font-size: 18px
+                    line-height: 25px
+            .overlg
+                width: 60%
+                +lg
+                    display: none
+            .underlg
+                display: none
+                +lg
+                    +x-center
+                    display: block
+                    width: 100%
+                    height: 250px
+                +sm
+                    height: 200px
+
         .illustration
             display: flex
             justify-content: space-around
             margin-top: 40px
+            +lg
+                margin-top: 0px
             img
                 height: 140px
+                +lg
+                    height: 180px
+                +sm
+                    height: 150px
+                +xm
+                    height: 120px
+            .underlg
+                +lg
+                    display: none
+            .undersm
+                +sm
+                    display: none
             
-        a.btn
-            display: inline-block
+        a.btn.start
             +x-center
+            display: inline-block
             margin-top: 60px
-            border: 1px solid #000
+            padding: 10px 30px 
+            font-weight: 500
+            font-size: 30px
+            background-color: $color_orange
+            transition-duration: 0.1s
             &:hover
-                background-color: $color_grey
                 color: $color_white
-                transition-duration: 0.2s
-            
+                background-color: $color_pink
+                left: 50%
+                transform: translate(-49%,3px)
+                // transition-duration: 0.2s
+            +lg 
+                margin-top: 30px  
+            +xm
+                margin-top: 20px
 section#question
-    background-image: url('../source/img/2.jpg')
-    height: 100vh
     display: none
-
+    min-height: 880px
+    height: 100vh
+    background-image: url('../source/img/question-bg.png')
+    +sm
+        min-height: 667px
     .container
-        background-color: rgba(248, 248, 248, 0.6)
+        background-color: rgba(248, 248, 248, 0.7)
         padding: 60px 
         +y-center
+        +xl
+            padding: 30px 60px
+        +md
+            padding: 40px
+        +sm
+            padding: 10px
         .number
             font-size: 60px
             font-weight: 700
+            color: $color_dkPink
+            +xl
+                font-size: 50px
+            +sm
+                font-size: 40px
         .form
             margin-top: 50px
+            +xl
+                margin-top: 40px
+            +sm
+                margin-top: 30px
             .question
                 margin-bottom: 30px
+                +xl
+                    font-size: 30px
+                +sm
+                    font-size: 25px
             input
                 margin: 0px 15px
+                +md
+                    margin: 0px 5px
+                &:focus
+                    background-color: $color_pink 
             label
-                margin-bottom: 20px
+                padding: 20px 0px
                 font-size: 30px
-
-            
+                &:hover
+                    background-color: $color_pink
+                +md
+                    font-size: 25px
+                +sm
+                    font-size: 17px
         .wrap
-            margin-top: 80px
             display: flex
-            justify-content: space-between
+            justify-content: flex-end
+            margin-top: 80px
+            +xl
+                margin-top: 20px
             .btn
-                background-color: $color_yellow
-                font-weight: 500
-                font-size: 30px
                 padding: 10px 30px 
                 right: 0px
+                font-weight: 500
+                font-size: 30px
+                background-color: $color_orange
                 &:hover
-                    background-color: $color_dkYellow
                     color: $color_white
+                    background-color: $color_pink
     .container#q-one
         .wrap
             justify-content: flex-end
@@ -149,85 +352,357 @@ section#question
 
 section#result
     display: none
+    font-weight: 700
     height: 100vh
-    background-image: url('../source/img/4-1.jpg')
-    background-color: cover
-    .wrap
+    min-height: 900px
+    background-image: url('../source/img/headerbg.png')
+    // background-color: cover
+    background-size: cover
+    +less-lg
+        min-height: auto
+        height: auto
+        
+    // background-color: $color_orange
+    .bgcolor
+        background-color: rgba(0,0,0,0.1)
+        position: absolute
+        width: 100%
+        height: 100%
+    .wrap-outside
         +y-center
+        +less-lg
+            top: 0
+            transform: translateY(0)
+            padding: 30px 0px
         h2
+            // margin-bottom: 40px
             text-align: center
-            font-size: 30px
-            margin-bottom: 40px
+            font-size: 50px
+            letter-spacing: 2px
+            color: $color_black
+            +xl
+                font-size: 40px
+            +sm
+                // margin-bottom: 20px
+                font-size: 25px
+        .container#oversm
+            background-color: $color_pink
+            padding: 40px 0px
+            +xl
+                padding: 20px 0px
+        // .oversm
+        //     +sm
+        //         display: none
+        // .undersm
+        //     display: none
+        //     +sm
+        //         display: block
         .container.part-one
             display: flex
-            justify-content: space-around
-            height: 350px
-            
-            .wrap
-                border: 1px solid #000
-                padding: 20px
-                .h4
-                    font-weight: 500
+            justify-content: space-between
+            height: auto
+            background-color: rgba(248,248,248,0.9)
+            // border: 1px solid #000
+            +less-lg
+                flex-direction: column
+            +sm
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                height: auto
+            .wrap-inside
+                padding: 30px 40px
+                // border: 1px solid #000
+                width: 60%
+                +xl
+                    padding: 20px 30px
+                +less-lg
+                    width: 100%
+                +sm
+                    padding: 20px 10px
                 p
+                    display: none
                     margin-top: 20px
-                    
+                    font-size: 25px
+                    line-height: 2
+                    font-weight: normal
+                    +xl
+                        margin-top: 0px
+                    +lg
+                        font-size: 20px
+                    +sm 
+                        font-size: 18px
+                        line-height: 30px
+                    span
+                        font-size: 30px
+
+                        font-weight: 700
+                        +sm
+                            font-size: 18px
             .wrap
                 width: 45%
-
+                // +less-lg
+                //     width: 100%
+                +sm
+                    width: 100%
             img
-                height: 100%
+                height: 400px
+                align-self: flex-end
+                +less-lg
+                    align-self: center
+                +sm
+                    height: 180px
+
         .container.part-two
-            margin-top: 40px
             display: flex
             justify-content: space-around
+            margin-top: 40px
+            +less-lg
+                flex-direction: column
+            +sm
+                margin-top: 20px
+                flex-direction: column
             .btn
-                background-color: $color_yellow
-                font-weight: 500
-                font-size: 30px
                 padding: 10px 30px 
                 right: 0px
+                font-weight: 500
+                font-size: 30px
+                // border: 3px solid $color_pink
+                background-color: $color_pink
+                -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4))
                 &:hover
-                    background-color: $color_dkYellow
                     color: $color_white
+                    background-color: $color_dkPink
+                .fab,.fas,.far
+                    margin-right: 10px
+                +less-lg
+                    margin-bottom: 10px
+                +sm
+                    margin-bottom: 10px
+                    padding: 6px 10px
+                    font-size: 20px
+            .btn.share
+                background-color: #3b5998
+                color: $color_white
+                &:hover
+                    background-color: #dfe3ee
+                    color: #3b5998
 section#article
-    height: 100vh
     display: none
+    height: 100vh
+    min-height: 880px
+    background-image: url(../source/img/question-bg.png)
+
+    +lg
+        height: 800px
+    +sm
+        height: 736px
+    +xm
+        height: 667px
+    #spicy-article
+        background-image: url("../source/img/spicy-article.jpg")
+    #salt-article
+        background-image: url("../source/img/salt-article.jpg")
+    #sugar-article
+        background-image: url("../source/img/sugar-article.jpg")
+    #fish-article
+        background-image: url("../source/img/fish-article.jpg")
+    #mayonnaise-article
+        background-image: url("../source/img/mayonnaise-article.jpg")
+    #sesame-article
+        background-image: url("../source/img/sesame-article.jpg")
+    #soup-article
+        background-image: url('../source/img/soup-article.jpg')
+    #soysauce-article
+        background-image: url('../source/img/soysauce-article.jpg')
+    #soba-article
+        background-image: url('../source/img/soba-article.jpg')
+    #vinegar-article
+        background-image: url('../source/img/vinegar-article.jpg')
     .container
+        background-color: rgba(248,248,248 ,0.8 )
+        padding: 0
+        +y-center
         h2
             text-align: center
-            font-size: 30px
+            font-size: 45px
             font-weight: 500
-        +y-center
+            padding: 50px 0px
+            width: 100%
+            background-color: $color_pink
+            +xl
+                padding: 20px 0px
+                font-size: 40px
+            +lg
+                font-size: 30px
+            +sm
+                font-size: 25px
+        .carousel-control-prev
+            +y-center
+            height: 60px
+            width: 60px
+            left: -30px
+            background-color: $color_dkPink
+            // +lg
+            //     top: 391px
+            //     left: 45px
+            +md
+                top: 500px
+                left: 0px
+            +sm
+                top: 391px
+                left: 0px 
+            +xm
+                top: 341px
+        .carousel-control-next
+            +y-center
+            height: 60px
+            width: 60px
+            right: -30px
+            background-color: $color_dkPink
+            // +lg
+            //     top: 391px
+            //     right: 44px
+            +md
+                top: 500px
+                right: 0px
+            +sm
+                top: 391px
+                right: 0px
+            +xm
+                top: 341px
+                
+        ol
+            transform: translateY(30px)
+            li
+                background-color: $color_black
         .wrap
             display: flex
             justify-content: space-around
-            margin-top: 50px
+            margin-top: 20px
+            padding: 0px 30px
             .article
-                border: 1px solid #000
                 width: 30%
-                text-decoration: none
                 color: $color_black
+                text-decoration: none
+                +xl
+                    width: 28%
                 .article-img
                     width: 100%
                     height: 200px
-                    background-image: url("../source/img/test2.png")
                     background-size: cover
                     background-position: center center
-                    margin-top: 20px
+                    +xl
+                        height: 180px
+                
                 p
                     margin-top: 20px
+                    line-height: 1.5
                 .illustration
                     +x-center
                     width: auto
                     height: 150px
+        .carousel#overmd-carousel
+            +md
+                display: none
+        .carousel#oversm-carousel
+            display: none
+            .article
+                width: 45%
+            +md
+                display: block
+            +sm
+                display: none
+            
+
+        .carousel#undersm-carousel
+            +x-center
+            display: none
+            width: 80%
+            +sm
+                display: block
+            
+            .article
+                // margin-top: 50px
+                width: 80%
+                color: $color_black
+                text-decoration: none
+                p
+                    margin-top: 20px
+                    line-height: 1.5
+                .article-img
+                    height: 250px
+                    // margin-top: 20px
+                    background-size: cover
+                    background-position: center center
+                    +xm
+                        height: 200px
+                .illustration
+                    +x-center
+                    width: auto
+                    height: 150px
+                
         .logo-link
             display: flex
             justify-content: center
-            margin-top: 50px
+            margin-top: 60px
+            padding-bottom: 20px
+            // margin-bottom: 20px
+            img
+                height: 130px
+                +xl
+                    height: 100px
 footer
     display: none
-    padding: 100px
+    padding: 50px
+    
     background-color: $color_white
-    img
-        height: 200px
-        +x-center
+    .wrap-outside
+        display: flex
+        justify-content: center
+        align-content: center
+        +md
+            display: block
+        a.logo
+            margin-right: 60px
+            img
+                +x-center
+                height: 100px
+                +md
+                    height: 70px
+        .line
+            border-right: 0.5px solid #888888
+            margin-right: 60px
+            +md
+                display: none
+        hr
+            display: none
+            +md
+                display: block
+        .wrap
+            p
+                font-size: 20px
+                margin-top: 20px
+                color: $color_red
+                font-weight: 600
+                +md
+                    font-size: 20px
+                    margin-top: 40px
+            .wrap-inside
+                margin-top: 20px
+                +md
+                    text-align: center
+                    margin-top: 10px
+                a.fab
+                    font-size: 35px
+                    padding: 20px
+                    color: $color_grey
+                    text-decoration: none
+                    &:hover 
+                        color: $color_pink
+                    
+    p
+        text-align: center
+        margin-top: 30px
+        font-size: 15px
+        

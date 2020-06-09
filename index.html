@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pocket Japan Test</title>
+    <title>職場的酸甜苦辣十種滋味，你是職場中哪種日式調味料？</title>
     <meta charset="UTF-8"/>
+    <meta name="description" content="你是職場中哪種日式調味料？快來心理測驗看看！！"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:url" content="https://pocketjapan.tw/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="你是職場中哪種日式調味料？-口袋日本"/>
+    <meta property="og:image" content=""/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
@@ -11,21 +16,25 @@
   </head>
   <body>
     <nav></nav>
-    <section id="header">
-      <h1>職場的酸甜苦辣十種滋味，<br/>你是職場中哪種日式調味料？</h1><a href="#intro">
-        <div class="lets_see">趕快來看看!</div>
+    <section id="header"><a class="logo" href="https://pocketjapan.tw/" target="_blank" title="前往日本口袋首頁"><img id="logo-img" src="source/img/pocket japan logo 2.png" alt=""/></a>
+      <h1> 
+        <div class="bgcolor"></div>
+        <p>職場的酸甜苦辣十種滋味<br/>你是職場中哪種日式調味料？</p>
+      </h1><a class="gotest" href="#intro">
+        <div class="lets_see">趕快來測看看!</div>
         <div class="fas fa-chevron-down"></div></a>
-      <div class="illustration"><img id="human1" src="source/img/human1.png" alt=""/><img id="human2" src="source/img/human3.png" alt=""/><img id="human3" src="source/img/human3.png" alt=""/><img id="human4" src="source/img/human4.png" alt=""/></div>
+      <div class="illustration"><img class="undersm" id="human1" src="source/img/soysauce.png" alt=""/><img id="human2" src="source/img/spicy.png" alt=""/><img id="human3" src="source/img/sugar.png" alt=""/><img class="undersm" id="human4" src="source/img/salt.png" alt=""/></div>
     </section>
     <section id="intro">
       <div class="container">
         <div class="part-one">
+          <iframe class="underlg" src="https://www.youtube.com/embed/9aJVr5tTTWk" frameborder="0"></iframe>
           <div class="intro">
             <p>若愛情酸甘甜有五種氣味<br/>那麼身在職場匆匆忙忙的我們<br/>又擁有什麼味道呢？<br/><br/>一起來跟口袋日本做心測<br/>找到你在辦公室中的那一味吧！</p>
           </div>
-          <iframe src="https://www.youtube.com/embed/9aJVr5tTTWk" frameborder="0"></iframe>
+          <iframe class="overlg" src="https://www.youtube.com/embed/9aJVr5tTTWk" frameborder="0"></iframe>
         </div>
-        <div class="illustration"><img src="source/img/human3.png" alt=""/><img src="source/img/human3.png" alt=""/><img src="source/img/human3.png" alt=""/><img src="source/img/human3.png" alt=""/><img src="source/img/human3.png" alt=""/><img src="source/img/human3.png" alt=""/></div><a class="btn start" href="#question">開始測驗</a>
+        <div class="illustration"><img class="underlg" src="source/img/vinegar.png" alt=""/><img class="underlg" src="source/img/sesame.png" alt=""/><img src="source/img/fish.png" alt=""/><img src="source/img/soba.png" alt=""/><img class="undersm" src="source/img/soup.png" alt=""/><img class="undersm" src="source/img/mayonnaise.png" alt=""/></div><a class="btn start" href="#question">開始測驗</a>
       </div>
     </section>
     <section id="question">
@@ -63,7 +72,7 @@
             <input type="radio" id="two-E" name="q-two" value="E"/>
             <label for="two-E">E. 躲在上司看不到的角落一邊吃飯一邊追劇</label>
           </div>
-          <div class="wrap"><a class="btn back-1" href="#q-one">上一題</a><a class="next-3" href="#q-three">  
+          <div class="wrap"><a class="next-3" href="#q-three">  
               <input class="btn" type="submit" value="下一題"/></a></div>
         </div>
       </div>
@@ -82,7 +91,7 @@
           <input type="radio" id="three-E" name="q-three" value="E"/>
           <label for="three-E">E. 問主管明天能不能晚點進辦公室補休</label>
         </div>
-        <div class="wrap"><a class="btn back-2" href="#q-two">上一題</a><a class="next-4" href="#q-four">
+        <div class="wrap"><a class="next-4" href="#q-four">
             <input class="btn" type="submit" value="下一題"/></a></div>
       </div>
       <div class="container" id="q-four">
@@ -100,7 +109,7 @@
           <input type="radio" id="four-E" name="q-four" value="E"/>
           <label for="four-E">E. 哭，根本沒有朋友邀我出國玩</label>
         </div>
-        <div class="wrap"><a class="btn back-3" href="#q-three">上一題</a><a class="next-5" href="#q-five">
+        <div class="wrap"><a class="next-5" href="#q-five">
             <input class="btn" type="submit" value="下一題"/></a></div>
       </div>
       <div class="container" id="q-five">
@@ -118,7 +127,7 @@
           <input type="radio" id="five-E" name="q-five" value="E"/>
           <label for="five-E">E. 遠方觀察推理為何這個女孩在哭泣</label>
         </div>
-        <div class="wrap"><a class="btn back-4" href="#q-four">上一題</a><a class="next-6" href="#q-six">
+        <div class="wrap"><a class="next-6" href="#q-six">
             <input class="btn" type="submit" value="下一題"/></a></div>
       </div>
       <div class="container" id="q-six">
@@ -136,8 +145,8 @@
           <input type="radio" id="six-E" name="q-six" value="E"/>
           <label for="six-E">E. 去找另一個沒滿出來的垃圾桶丟</label>
         </div>
-        <div class="wrap"><a class="btn back-5" href="#q-five">上一題</a><a class="next-7" href="#q-seven">
-            <input class="btn" type="submit" value="最後一題"/></a></div>
+        <div class="wrap"><a class="next-7" href="#q-seven">
+            <input class="btn" type="submit" value="下一題"/></a></div>
       </div>
       <div class="container" id="q-seven">
         <div class="number">Q7</div>
@@ -146,7 +155,7 @@
           <input type="radio" id="seven-A" name="q-seven" value="A" required="required"/>
           <label for="seven-A">A. 直接地指出錯誤</label><br/>
           <input type="radio" id="seven-B" name="q-seven" value="B"/>
-          <label for="seven-B">B. 在對談間巧妙間接提醒那裡有錯</label><br/>
+          <label for="seven-B">B. 在對談間巧妙間接提醒哪裡有錯</label><br/>
           <input type="radio" id="seven-C" name="q-seven" value="C"/>
           <label for="seven-C">C. 假裝沒發現，反正不干我的事</label><br/>
           <input type="radio" id="seven-D" name="q-seven" value="D"/>
@@ -154,76 +163,204 @@
           <input type="radio" id="seven-E" name="q-seven" value="E"/>
           <label for="seven-E">E. 根本沒發現到錯誤！就沒有錯誤！</label>
         </div>
-        <div class="wrap"><a class="btn back-6" href="#q-six">上一題</a><a class="next-result" href="#section#result">
+        <div class="wrap"><a class="next-result" href="#section#result">
             <input class="btn" type="submit" value="看結果"/></a></div>
       </div>
     </section>
     <section id="result">
-      <div class="wrap">
-        <h2>你在職場是OOOOO型調味料</h2>
-        <div class="container part-one">
-          <div class="wrap">
-            <div class="h4">文案標題</div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quia adipisci incidunt voluptas blanditiis suscipit dolores ducimus veritatis, sunt aspernatur molestiae nisi pariatur quibusdam, dicta modi harum totam quisquam? Voluptatibus?</p>
-          </div><img src="source/img/human3.png" alt=""/>
+      <div class="bgcolor"></div>
+      <div class="wrap-outside">
+        <div class="container" id="oversm">
+          <h2></h2>
         </div>
-        <div class="container part-two"><a class="btn link" href="#">你的調味料!</a><a class="btn share" href="#">分享你的結果</a><a class="btn restart" href="#question">再測一次</a></div>
+        <div class="container part-one">
+          <div class="wrap-inside">
+            <p id="a-result">"你在職場就好比日式醬油，有著無法被抹除的存在感。你往往是核心人物，或者是矚目的類型。儘管你可能不怎麼願意當那個突出的人物，想低調行事，但在職場中你麻煩事情總是會落到你的身上。"<br/><br/><span class="enemy">天敵調味料：黑糖</span><br/><span class="friend">適合調味料：鹽巴</span></p>
+            <p id="b-result">"你直來直往的性格，就算進入了職場也絕對不會因為五斗米而折腰。你就好比日式辣油，帶著辛辣卻不嗆，往往能在會議討論中不耍迂迴，直指出問題核心。直接的個性不會讓人討厭，反而能成為職場的公道伯，很多不公不義的事情就靠你發聲。"<br/><br/><span class="enemy">天敵調味料：醋</span><br/><span class="friend">適合調味料：醬油</span></p>
+            <p id="c-result">"你在職場人見人愛花見花開，因為你就好比黑糖，懂得如何說出討好職場各類人的話語。和氣生財是你的信念，人人都能當你的朋友，這樣業績就會源源不絕。"<br/><br/><span class="enemy">天敵調味料：湯底</span><br/><span class="friend">適合調味料：炒麵醬</span></p>
+            <p id="d-result">"你是默默耕耘安靜努力不起眼的「鹽」系同事，但任何事情沒有你不行，有了你就萬事ＯＫ。在職場你就如同「鹽」般的存在，任何人都曉得職場中有什麼不懂的，就是找你CARRY就行了，但也要小心你不居功的個性，會讓你沒辦法在職場有適當的升遷喔！"<br/><br/><span class="enemy">天敵調味料：黑糖</span><br/><span class="friend">適合調味料：鰹魚露</span></p>
+            <p id="e-result">"你是「湯底」系的同事，你有超強大底蘊，也許是飽讀詩書海外歸來的天降型同事，也可能是你的後台特別硬。在職場你自帶力場，沒人特別敢去招惹你。你知道自己有幾分重量，卻也喜歡做自己，你總是能照著你的步伐，一步步的前進的自信家。"<br/><br/><span class="enemy">天敵調味料：辣醬</span><br/><span class="friend">適合調味料：醬油</span></p>
+            <p id="f-result">"你在職場是「醋」型調味料。你精打細算，喜歡默默觀察。但你的內心小劇場卻非常多，總是計較著職場誰比較得意～誰好處拿得多～其實你只是對自己沒有自信跟缺乏一些好運，再多努力一點花點智慧取得你該有的讚譽吧！"<br/><br/><span class="enemy">天敵調味料：湯底</span><br/><span class="friend">適合調味料：鹽巴</span></p>
+            <p id="g-result">"你是炒麵醬型同事，在公司中也許是最愛揪團的、最喜歡分享快樂的事情活絡氣氛的人。外表熱情親切底下，卻其實包著一顆怕寂寞怕被忽略的心。在職場中仍擔任著康樂股長的你，有時候也要小心注意上司的眼光喔！"<br/><br/><span class="enemy">天敵調味料：美乃滋</span><br/><span class="friend">適合調味料：醋</span></p>
+            <p id="h-result">"你是辦公室中的「日式美乃滋」，通常你是職場中公認的怪咖或者是邊緣人。但其實你只是內心已經看遍紅塵覺得職場人際關係都是浮雲，事情乖乖做好即可不需要多花力氣經營。也可能是你其實志不在此，或者真正的才華未被重用，似乎偶爾會有想跳轉的念頭唷！"<br/><br/><span class="enemy">天敵調味料：炒麵醬</span><br/><span class="friend">適合調味料：芝麻醬</span></p>
+            <p id="i-result">"你是芝麻醬型的同事，上司還是老闆或者是新來搞不清楚狀況的同事都會成為你的抱怨對象～但其實你只是刀子口豆腐心，只是嘴癢了愛抱怨而已！真的有需要時，你也會不吝嗇的伸出援手幫忙，讓大家愛被你念又不被討厭。不過有時候還是要小心玻璃心同事，被你唸唸就懷恨在心喔！"<br/><br/><span class="enemy">天敵調味料：黑糖</span><br/><span class="friend">適合調味料：美乃滋</span></p>
+            <p id="j-result">
+              "你在職場好比「鰹魚露」，任何索然無味的東西沾上你，就變得舒服好吃。你有著體貼溫暖的個性，在職場就是個人形暖爐也擅長聆聽。
+              大家最愛私底下找你聊心事，
+              久而久之你也變成了這個公司中知道不少八卦的人～
+              但可是要小心花太多時間處理別人的問題，工作會做不完喔！"<br/><br/><span class="enemy">天敵調味料：芝麻醬</span><br/><span class="friend">適合調味料：黑糖</span>
+            </p>
+          </div><img src="" alt=""/>
+        </div>
+        <div class="container part-two"><a class="btn link" href="#" target="_blank"> 
+            <div class="far fa-newspaper"></div><span>認識你的調味料</span></a><a class="btn share" href="javascript:window.open(&quot;https://www.facebook.com/sharer/sharer.php?u=https://pocketjapan.tw/&quot;, &quot;_blank&quot;, &quot;toolbar=0,status=0&quot;)">
+            <div class="fab fa-facebook-square"></div><span>分享你的結果</span></a><a class="btn restart" href="#question">
+            <div class="fas fa-undo"></div><span>再測一次</span></a></div>
       </div>
     </section>
     <section id="article">
       <div class="container">
-        <h2>這裡還有更多調味料喔!    </h2>
-        <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+        <h2>這裡還有更多調味料喔!  </h2>
+        <div class="carousel slide" id="undersm-carousel" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li class="active" data-target="#undersm" data-slide-to="0"></li>
+            <li data-target="#undersm" data-slide-to="1"></li>
+            <li data-target="#undersm" data-slide-to="2"></li>
+            <li data-target="#undersm" data-slide-to="3"></li>
+            <li data-target="#undersm" data-slide-to="4"></li>
+            <li data-target="#undersm" data-slide-to="5"></li>
+            <li data-target="#undersm" data-slide-to="6"></li>
+            <li data-target="#undersm" data-slide-to="7"></li>
+            <li data-target="#undersm" data-slide-to="8"></li>
+            <li data-target="#undersm" data-slide-to="9"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active"><a class="article" href="https://pocketjapan.tw/34727/" target="_blank"><img class="illustration" src="source/img/fish.png" alt=""/>
+                <div class="article-img" id="fish-article"></div>
+                <p>日本調味料推薦【味露篇】：取代醬油的神奇沾醬，日式料理必備這罐</p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34437/" target="_blank"><img class="illustration" src="source/img/spicy.png" alt=""/>
+                <div class="article-img" id="spicy-article"></div>
+                <p>日本調味料推薦【辣油篇】：無辣不歡必見，日式風味各種辣度大挑戰</p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34491/" target="_blank"><img class="illustration" src="source/img/sugar.png" alt=""/>
+                <div class="article-img" id="sugar-article"></div>
+                <p>日本調味料推薦【糖篇】：日本家常料理最常用的甜蜜滋味</p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34564/" target="_blank"><img class="illustration" src="source/img/mayonnaise.png" alt=""/>
+                <div class="article-img" id="mayonnaise-article"></div>
+                <p>日本調味料推薦【美乃滋篇】：加上這些酸甜滋味瞬間有股日本味</p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34534/" target="_blank"><img class="illustration" src="source/img/vinegar.png" alt=""/>
+                <div class="article-img" id="vinegar-article"></div>
+                <p>日本調味料推薦【醋篇】：日式獨有的酸甜醋味種類品項大公開</p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34674/" target="_blank"><img class="illustration" src="source/img/salt.png" alt=""/>
+                <div class="article-img" id="salt-article"></div>
+                <p>日本調味料推薦【鹽巴篇】：日式風味少不了這一匙！挑對鹽巴讓你一秒到日本 </p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34599/" target="_blank"><img class="illustration" src="source/img/sesame.png" alt=""/>
+                <div class="article-img" id="sesame-article"></div>
+                <p>日本調味料推薦【芝麻醬篇】：沙拉、涼拌、肉類料理不可缺的和風味</p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34664/" target="_blank"><img class="illustration" src="source/img/soysauce.png" alt=""/>
+                <div class="article-img" id="soysauce-article"></div>
+                <p>日本調味料推薦【醬油篇】：廚房有了這一瓶，各式日本料理都難不倒！</p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34682/" target="_blank"><img class="illustration" src="source/img/soup.png" alt=""/>
+                <div class="article-img" id="soup-article"></div>
+                <p>日本調味料推薦【湯底篇】：不用搭飛機～自己在家料理東西軍的必備湯底 </p></a></div>
+            <div class="carousel-item"><a class="article" href="https://pocketjapan.tw/34666/" target="_blank"><img class="illustration" src="source/img/soba.png" alt=""/>
+                <div class="article-img" id="soba-article"></div>
+                <p>日本調味料推薦【炒麵醬篇】：挑戰自製日本國民美食，一定不能少了這一瓶！</p></a></div>
+          </div><a class="carousel-control-prev" href="#undersm-carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#undersm-carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+        </div>
+        <div class="carousel slide" id="oversm-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#oversm" data-slide-to="0"></li>
+            <li data-target="#oversm" data-slide-to="1"></li>
+            <li data-target="#oversm" data-slide-to="2"></li>
+            <li data-target="#oversm" data-slide-to="3"></li>
+            <li data-target="#oversm" data-slide-to="4"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="wrap"><a class="article mr-4" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」</p></a><a class="article mr-4" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」</p></a><a class="article" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 </p></a></div>
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34727/" target="_blank"><img class="illustration" src="source/img/fish.png" alt=""/>
+                  <div class="article-img" id="fish-article"></div>
+                  <p>日本調味料推薦【味露篇】：取代醬油的神奇沾醬，日式料理必備這罐</p></a><a class="article" href="https://pocketjapan.tw/34437/" target="_blank"><img class="illustration" src="source/img/spicy.png" alt=""/>
+                  <div class="article-img" id="spicy-article"></div>
+                  <p>日本調味料推薦【辣油篇】：無辣不歡必見，日式風味各種辣度大挑戰</p></a></div>
             </div>
             <div class="carousel-item">
-              <div class="wrap"><a class="article mr-4" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」</p></a><a class="article mr-4" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」</p></a><a class="article" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 </p></a></div>
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34491/" target="_blank"><img class="illustration" src="source/img/sugar.png" alt=""/>
+                  <div class="article-img" id="sugar-article"></div>
+                  <p>日本調味料推薦【糖篇】：日本家常料理最常用的甜蜜滋味</p></a><a class="article" href="https://pocketjapan.tw/34564/" target="_blank"><img class="illustration" src="source/img/mayonnaise.png" alt=""/>
+                  <div class="article-img" id="mayonnaise-article"></div>
+                  <p>日本調味料推薦【美乃滋篇】：加上這些酸甜滋味瞬間有股日本味</p></a></div>
             </div>
             <div class="carousel-item">
-              <div class="wrap"><a class="article mr-4" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」</p></a><a class="article mr-4" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」</p></a><a class="article" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 </p></a></div>
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34534/" target="_blank"><img class="illustration" src="source/img/vinegar.png" alt=""/>
+                  <div class="article-img" id="vinegar-article"></div>
+                  <p>日本調味料推薦【醋篇】：日式獨有的酸甜醋味種類品項大公開</p></a><a class="article" href="https://pocketjapan.tw/34674/" target="_blank"><img class="illustration" src="source/img/salt.png" alt=""/>
+                  <div class="article-img" id="salt-article"></div>
+                  <p>日本調味料推薦【鹽巴篇】：日式風味少不了這一匙！挑對鹽巴讓你一秒到日本 </p></a></div>
             </div>
             <div class="carousel-item">
-              <div class="wrap"><a class="article mr-4" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」</p></a><a class="article mr-4" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」</p></a><a class="article" href="#"><img class="illustration" src="source/img/human3.png" alt=""/>
-                  <div class="article-img"></div>
-                  <p>日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 </p></a></div>
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34599/" target="_blank"><img class="illustration" src="source/img/sesame.png" alt=""/>
+                  <div class="article-img" id="sesame-article"></div>
+                  <p>日本調味料推薦【芝麻醬篇】：沙拉、涼拌、肉類料理不可缺的和風味</p></a><a class="article" href="https://pocketjapan.tw/34664/" target="_blank"><img class="illustration" src="source/img/soysauce.png" alt=""/>
+                  <div class="article-img" id="soysauce-article"></div>
+                  <p>日本調味料推薦【醬油篇】：廚房有了這一瓶，各式日本料理都難不倒！ </p></a></div>
             </div>
-          </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+            <div class="carousel-item">
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34682/" target="_blank"><img class="illustration" src="source/img/soup.png" alt=""/>
+                  <div class="article-img" id="soup-article"></div>
+                  <p>日本調味料推薦【湯底篇】：不用搭飛機～自己在家料理東西軍的必備湯底</p></a><a class="article" href="https://pocketjapan.tw/34666/" target="_blank"><img class="illustration" src="source/img/soba.png" alt=""/>
+                  <div class="article-img" id="soba-article"></div>
+                  <p>日本調味料推薦【炒麵醬篇】：挑戰自製日本國民美食，一定不能少了這一瓶！</p></a></div>
+            </div>
+          </div><a class="carousel-control-prev" href="#oversm-carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#oversm-carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
         </div>
-        <div class="logo-link"><img class="mr-5" src="source/img/header_logo.jpg" alt=""/><img src="source/img/header_logo.jpg" alt=""/></div>
+        <div class="carousel slide" id="overmd-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#overmd" data-slide-to="0"></li>
+            <li data-target="#overmd" data-slide-to="1"></li>
+            <li data-target="#overmd" data-slide-to="2"></li>
+            <li data-target="#overmd" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34727/" target="_blank"><img class="illustration" src="source/img/fish.png" alt=""/>
+                  <div class="article-img" id="fish-article"></div>
+                  <p>日本調味料推薦【味露篇】：取代醬油的神奇沾醬，日式料理必備這罐</p></a><a class="article" href="https://pocketjapan.tw/34437/" target="_blank"><img class="illustration" src="source/img/spicy.png" alt=""/>
+                  <div class="article-img" id="spicy-article"></div>
+                  <p>日本調味料推薦【辣油篇】：無辣不歡必見，日式風味各種辣度大挑戰</p></a><a class="article" href="https://pocketjapan.tw/34491/" target="_blank"><img class="illustration" src="source/img/sugar.png" alt=""/>
+                  <div class="article-img" id="sugar-article"></div>
+                  <p>日本調味料推薦【糖篇】：日本家常料理最常用的甜蜜滋味</p></a></div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34564/" target="_blank"><img class="illustration" src="source/img/mayonnaise.png" alt=""/>
+                  <div class="article-img" id="mayonnaise-article"></div>
+                  <p>日本調味料推薦【美乃滋篇】：加上這些酸甜滋味瞬間有股日本味</p></a><a class="article" href="https://pocketjapan.tw/34534/" target="_blank"><img class="illustration" src="source/img/vinegar.png" alt=""/>
+                  <div class="article-img" id="vinegar-article"></div>
+                  <p>日本調味料推薦【醋篇】：日式獨有的酸甜醋味種類品項大公開</p></a><a class="article" href="https://pocketjapan.tw/34674/" target="_blank"><img class="illustration" src="source/img/salt.png" alt=""/>
+                  <div class="article-img" id="salt-article"></div>
+                  <p>日本調味料推薦【鹽巴篇】：日式風味少不了這一匙！挑對鹽巴讓你一秒到日本 </p></a></div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34599/" target="_blank"><img class="illustration" src="source/img/sesame.png" alt=""/>
+                  <div class="article-img" id="sesame-article"></div>
+                  <p>日本調味料推薦【芝麻醬篇】：沙拉、涼拌、肉類料理不可缺的和風味</p></a><a class="article" href="https://pocketjapan.tw/34664/" target="_blank"><img class="illustration" src="source/img/soysauce.png" alt=""/>
+                  <div class="article-img" id="soysauce-article"></div>
+                  <p>日本調味料推薦【醬油篇】：廚房有了這一瓶，各式日本料理都難不倒！</p></a><a class="article" href="https://pocketjapan.tw/34682/" target="_blank"><img class="illustration" src="source/img/soup.png" alt=""/>
+                  <div class="article-img" id="soup-article"></div>
+                  <p>日本調味料推薦【湯底篇】：不用搭飛機～自己在家料理東西軍的必備湯底 </p></a></div>
+            </div>
+            <div class="carousel-item">
+              <div class="wrap"><a class="article" href="https://pocketjapan.tw/34666/" target="_blank"><img class="illustration" src="source/img/soba.png" alt=""/>
+                  <div class="article-img" id="soba-article"></div>
+                  <p>日本調味料推薦【炒麵醬篇】：挑戰自製日本國民美食，一定不能少了這一瓶！</p></a></div>
+            </div>
+          </div><a class="carousel-control-prev" href="#overmd-carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#overmd-carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+        </div>
+        <div class="logo-link"><a href="https://pocketjapan.tw/" target="_blank"><img class="mr-5" src="source/img/pocket japan logo 3.png" alt=""/></a><a href="https://www.pecopeco.co/" target="_blank"><img src="source/img/pekopeko.png" alt=""/></a></div>
       </div>
     </section>
-    <footer><img src="source/img/footer_logo.jpg" alt=""/></footer>
+    <footer>
+      <div class="wrap-outside"><a class="logo" href="https://pocketjapan.tw/" target="_blank" title="前往日本口袋首頁"><img src="source/img/pocket japan logo 2.png" alt=""/></a>
+        <p> </p>
+        <div class="line"></div>
+        <hr/>
+        <div class="wrap">
+          <p>Follow Us On</p>
+          <div class="wrap-inside"><a class="fab fa-facebook-f" href="https://www.facebook.com/pocketjapan.tw/" target="_blank" title="快來追蹤我們"></a><a class="fab fa-instagram" href="https://www.instagram.com/pocketjapan.tw/?hl=zh-tw" target="_blank" title="快來追蹤我們"></a></div>
+        </div>
+      </div>
+      <p>© 2020 MICROAD, INC.</p>
+    </footer>
     <script src="javascript/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/brands.min.js"></script>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/all.js"></script>

@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        title Pocket Japan Test
+        title 職場的酸甜苦辣十種滋味，你是職場中哪種日式調味料？
         meta(charset="UTF-8")
+        meta(name="description" ,content="你是職場中哪種日式調味料？快來心理測驗看看！！")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+        meta(property='og:url', content='https://pocketjapan.tw/')
+        meta(property='og:type', content='website')
+        meta(property='og:title', content='你是職場中哪種日式調味料？-口袋日本')
+        meta(property='og:image', content='')
+
         
         link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
@@ -12,20 +19,27 @@ html(lang="en")
     body
         nav
         section#header
-            h1 職場的酸甜苦辣十種滋味，
-                br
-                | 你是職場中哪種日式調味料？
-            a(href="#intro")
-                .lets_see 趕快來看看!
+            a(href="https://pocketjapan.tw/" target="_blank" title="前往日本口袋首頁").logo
+                img#logo-img(src="source/img/pocket japan logo 2.png", alt="")
+            h1 
+                .bgcolor
+                p 職場的酸甜苦辣十種滋味
+                    br
+                    | 你是職場中哪種日式調味料？
+                
+
+            a.gotest(href="#intro")
+                .lets_see 趕快來測看看!
                 .fas.fa-chevron-down
             .illustration
-                img#human1(src="source/img/human1.png", alt="")
-                img#human2(src="source/img/human3.png", alt="")
-                img#human3(src="source/img/human3.png", alt="")
-                img#human4(src="source/img/human4.png", alt="")
+                img#human1.undersm(src="source/img/soysauce.png", alt="")
+                img#human2(src="source/img/spicy.png", alt="")
+                img#human3(src="source/img/sugar.png", alt="")
+                img#human4.undersm(src="source/img/salt.png", alt="")
         section#intro
             .container
                 .part-one
+                    iframe.underlg(src="https://www.youtube.com/embed/9aJVr5tTTWk", frameborder="0")
                     .intro
                         p 若愛情酸甘甜有五種氣味
                             br
@@ -37,14 +51,14 @@ html(lang="en")
                             | 一起來跟口袋日本做心測
                             br
                             |找到你在辦公室中的那一味吧！
-                    iframe(src="https://www.youtube.com/embed/9aJVr5tTTWk", frameborder="0")
+                    iframe.overlg(src="https://www.youtube.com/embed/9aJVr5tTTWk", frameborder="0")
                 .illustration
-                    img(src="source/img/human3.png", alt="")
-                    img(src="source/img/human3.png", alt="")
-                    img(src="source/img/human3.png", alt="")
-                    img(src="source/img/human3.png", alt="")
-                    img(src="source/img/human3.png", alt="")
-                    img(src="source/img/human3.png", alt="")
+                    img.underlg(src="source/img/vinegar.png", alt="")
+                    img.underlg(src="source/img/sesame.png", alt="")
+                    img(src="source/img/fish.png", alt="")
+                    img(src="source/img/soba.png", alt="")
+                    img.undersm(src="source/img/soup.png", alt="")
+                    img.undersm(src="source/img/mayonnaise.png", alt="")
                     
                 a.btn.start(href="#question") 開始測驗
         section#question
@@ -66,7 +80,6 @@ html(lang="en")
                     br
                     input(type="radio" id="one-E"  name="q-one" value="E") 
                     label(for="one-E") E. 在大家面前舉起你人民的法槌
-                    //- img(src="source/img/human3.png", alt="")
                 .wrap
                     a.next-2(href="#q-two")
                         input(type="submit" value="下一題").btn 
@@ -90,9 +103,7 @@ html(lang="en")
                         br
                         input(type="radio" id="two-E"  name="q-two" value="E") 
                         label(for="two-E") E. 躲在上司看不到的角落一邊吃飯一邊追劇
-                        //- img(src="source/img/human3.png", alt="")
                     .wrap
-                        a.btn.back-1(href="#q-one") 上一題
                         
                         a.next-3(href="#q-three")   
                             input(type="submit" value="下一題").btn 
@@ -115,9 +126,7 @@ html(lang="en")
                     br
                     input(type="radio" id="three-E"  name="q-three" value="E") 
                     label(for="three-E") E. 問主管明天能不能晚點進辦公室補休
-                    //- img(src="source/img/human3.png", alt="")
                 .wrap
-                    a.btn.back-2(href="#q-two") 上一題
                     a.next-4(href="#q-four")
                         input.btn(type="submit" value="下一題")
                         
@@ -139,9 +148,9 @@ html(lang="en")
                     br
                     input(type="radio" id="four-E"  name="q-four" value="E") 
                     label(for="four-E") E. 哭，根本沒有朋友邀我出國玩
-                    //- img(src="source/img/human3.png", alt="")
+                    
                 .wrap
-                    a.btn.back-3(href="#q-three") 上一題
+                    
                     a.next-5(href="#q-five")
                             input.btn(type="submit" value="下一題")
             .container#q-five
@@ -162,9 +171,7 @@ html(lang="en")
                     br
                     input(type="radio" id="five-E"  name="q-five" value="E") 
                     label(for="five-E") E. 遠方觀察推理為何這個女孩在哭泣
-                    //- img(src="source/img/human3.png", alt="")
                 .wrap
-                    a.btn.back-4(href="#q-four") 上一題
                     a.next-6(href="#q-six")
                         input.btn(type="submit" value="下一題")
             .container#q-six
@@ -185,11 +192,9 @@ html(lang="en")
                     br
                     input(type="radio" id="six-E"  name="q-six" value="E") 
                     label(for="six-E") E. 去找另一個沒滿出來的垃圾桶丟
-                    //- img(src="source/img/human3.png", alt="")
                 .wrap
-                    a.btn.back-5(href="#q-five") 上一題
                     a.next-7(href="#q-seven")
-                        input.btn(type="submit" value="最後一題")
+                        input.btn(type="submit" value="下一題")
             .container#q-seven
                 .number Q7
                 .form
@@ -198,7 +203,7 @@ html(lang="en")
                     label(for="seven-A") A. 直接地指出錯誤
                     br
                     input(type="radio" id="seven-B"  name="q-seven" value="B") 
-                    label(for="seven-B") B. 在對談間巧妙間接提醒那裡有錯
+                    label(for="seven-B") B. 在對談間巧妙間接提醒哪裡有錯
                     br
                     input(type="radio" id="seven-C"  name="q-seven" value="C") 
                     label(for="seven-C") C. 假裝沒發現，反正不干我的事
@@ -208,109 +213,345 @@ html(lang="en")
                     br
                     input(type="radio" id="seven-E"  name="q-seven" value="E") 
                     label(for="seven-E") E. 根本沒發現到錯誤！就沒有錯誤！
-                    //- img(src="source/img/human3.png", alt="")
                 .wrap
-                    a.btn.back-6(href="#q-six") 上一題
                     a.next-result(href="#section#result")
                         input.btn(type="submit" value="看結果")
         section#result
-            .wrap
-                h2 你在職場是OOOOO型調味料
+            .bgcolor
+            .wrap-outside
+                .container#oversm
+                    h2
                 .container.part-one
-                    .wrap
-                        .h4 文案標題
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quia adipisci incidunt voluptas blanditiis suscipit dolores ducimus veritatis, sunt aspernatur molestiae nisi pariatur quibusdam, dicta modi harum totam quisquam? Voluptatibus?
-                    img(src="source/img/human3.png", alt="")
+                    //- h2.undersm 
+                    .wrap-inside
+                        p#a-result "你在職場就好比日式醬油，有著無法被抹除的存在感。你往往是核心人物，或者是矚目的類型。儘管你可能不怎麼願意當那個突出的人物，想低調行事，但在職場中你麻煩事情總是會落到你的身上。"
+                            br
+                            br
+                            span.enemy 天敵調味料：黑糖
+                            br
+                            span.friend 適合調味料：鹽巴
+
+                        p#b-result "你直來直往的性格，就算進入了職場也絕對不會因為五斗米而折腰。你就好比日式辣油，帶著辛辣卻不嗆，往往能在會議討論中不耍迂迴，直指出問題核心。直接的個性不會讓人討厭，反而能成為職場的公道伯，很多不公不義的事情就靠你發聲。"
+                            br
+                            br
+                            span.enemy 天敵調味料：醋
+                            br
+                            span.friend 適合調味料：醬油
+
+                        p#c-result "你在職場人見人愛花見花開，因為你就好比黑糖，懂得如何說出討好職場各類人的話語。和氣生財是你的信念，人人都能當你的朋友，這樣業績就會源源不絕。"
+                            br
+                            br
+                            span.enemy 天敵調味料：湯底
+                            br
+                            span.friend 適合調味料：炒麵醬
+
+                        p#d-result "你是默默耕耘安靜努力不起眼的「鹽」系同事，但任何事情沒有你不行，有了你就萬事ＯＫ。在職場你就如同「鹽」般的存在，任何人都曉得職場中有什麼不懂的，就是找你CARRY就行了，但也要小心你不居功的個性，會讓你沒辦法在職場有適當的升遷喔！"
+                            br
+                            br
+                            span.enemy 天敵調味料：黑糖
+                            br
+                            span.friend 適合調味料：鰹魚露
+
+                        p#e-result "你是「湯底」系的同事，你有超強大底蘊，也許是飽讀詩書海外歸來的天降型同事，也可能是你的後台特別硬。在職場你自帶力場，沒人特別敢去招惹你。你知道自己有幾分重量，卻也喜歡做自己，你總是能照著你的步伐，一步步的前進的自信家。"
+                            br
+                            br
+                            span.enemy 天敵調味料：辣醬
+                            br
+                            span.friend 適合調味料：醬油
+
+                        p#f-result "你在職場是「醋」型調味料。你精打細算，喜歡默默觀察。但你的內心小劇場卻非常多，總是計較著職場誰比較得意～誰好處拿得多～其實你只是對自己沒有自信跟缺乏一些好運，再多努力一點花點智慧取得你該有的讚譽吧！"
+                            br
+                            br
+                            span.enemy 天敵調味料：湯底
+                            br
+                            span.friend 適合調味料：鹽巴
+
+                        p#g-result "你是炒麵醬型同事，在公司中也許是最愛揪團的、最喜歡分享快樂的事情活絡氣氛的人。外表熱情親切底下，卻其實包著一顆怕寂寞怕被忽略的心。在職場中仍擔任著康樂股長的你，有時候也要小心注意上司的眼光喔！"
+                            br
+                            br
+                            span.enemy 天敵調味料：美乃滋
+                            br
+                            span.friend 適合調味料：醋
+
+                        p#h-result "你是辦公室中的「日式美乃滋」，通常你是職場中公認的怪咖或者是邊緣人。但其實你只是內心已經看遍紅塵覺得職場人際關係都是浮雲，事情乖乖做好即可不需要多花力氣經營。也可能是你其實志不在此，或者真正的才華未被重用，似乎偶爾會有想跳轉的念頭唷！"
+                            br
+                            br
+                            span.enemy 天敵調味料：炒麵醬
+                            br
+                            span.friend 適合調味料：芝麻醬
+
+                        p#i-result "你是芝麻醬型的同事，上司還是老闆或者是新來搞不清楚狀況的同事都會成為你的抱怨對象～但其實你只是刀子口豆腐心，只是嘴癢了愛抱怨而已！真的有需要時，你也會不吝嗇的伸出援手幫忙，讓大家愛被你念又不被討厭。不過有時候還是要小心玻璃心同事，被你唸唸就懷恨在心喔！"
+                            br
+                            br
+                            span.enemy 天敵調味料：黑糖
+                            br
+                            span.friend 適合調味料：美乃滋
+
+                        p#j-result "你在職場好比「鰹魚露」，任何索然無味的東西沾上你，就變得舒服好吃。
+                            |你有著體貼溫暖的個性，在職場就是個人形暖爐也擅長聆聽。
+                            |大家最愛私底下找你聊心事，
+                            |久而久之你也變成了這個公司中知道不少八卦的人～
+                            |但可是要小心花太多時間處理別人的問題，工作會做不完喔！"
+                            br
+                            br
+                            span.enemy 天敵調味料：芝麻醬
+                            br
+                            span.friend 適合調味料：黑糖
+
+                    img(src="", alt="")
                 .container.part-two
-                    a.btn.link(href="#") 你的調味料!
-                    a.btn.share(href="#") 分享你的結果
-                    a.btn.restart(href="#question") 再測一次
+                    a.btn.link(href="#" target="_blank") 
+                        .far.fa-newspaper
+                        span 認識你的調味料
+                    a.btn.share(href='javascript:window.open("https://www.facebook.com/sharer/sharer.php?u=https://pocketjapan.tw/", "_blank", "toolbar=0,status=0")')
+                        .fab.fa-facebook-square
+                        span 分享你的結果
+                    a.btn.restart(href="#question")
+                        .fas.fa-undo
+                        span 再測一次
                     
 
         section#article
             .container
-                h2 這裡還有更多調味料喔!    
-                .carousel.slide#carouselExampleIndicators(data-ride="carousel")
+                h2 這裡還有更多調味料喔!  
+                .carousel.slide#undersm-carousel(data-ride="carousel")
                     ol.carousel-indicators
-                        li.active(data-target="#carouselExampleIndicators" data-slide-to="0")
-                        li(data-target="#carouselExampleIndicators" data-slide-to="1")
-                        li(data-target="#carouselExampleIndicators" data-slide-to="2")
-                        li(data-target="#carouselExampleIndicators" data-slide-to="3")
+                        li.active(data-target="#undersm" data-slide-to="0")
+                        li(data-target="#undersm" data-slide-to="1")
+                        li(data-target="#undersm" data-slide-to="2")
+                        li(data-target="#undersm" data-slide-to="3")
+                        li(data-target="#undersm" data-slide-to="4")
+                        li(data-target="#undersm" data-slide-to="5")
+                        li(data-target="#undersm" data-slide-to="6")
+                        li(data-target="#undersm" data-slide-to="7")
+                        li(data-target="#undersm" data-slide-to="8")
+                        li(data-target="#undersm" data-slide-to="9")
+                    .carousel-inner
+                        .carousel-item.active
+                            a(href="https://pocketjapan.tw/34727/" target="_blank").article
+                                img.illustration(src="source/img/fish.png", alt="")
+                                .article-img#fish-article
+                                p 日本調味料推薦【味露篇】：取代醬油的神奇沾醬，日式料理必備這罐
+                        .carousel-item
+                            a(href="https://pocketjapan.tw/34437/" target="_blank").article
+                                img.illustration(src="source/img/spicy.png", alt="")
+                                .article-img#spicy-article
+                                p 日本調味料推薦【辣油篇】：無辣不歡必見，日式風味各種辣度大挑戰
+                        .carousel-item
+                            
+                            a(href="https://pocketjapan.tw/34491/" target="_blank").article
+                                img.illustration(src="source/img/sugar.png", alt="")
+                                .article-img#sugar-article
+                                p 日本調味料推薦【糖篇】：日本家常料理最常用的甜蜜滋味
+                        .carousel-item
+                            a(href="https://pocketjapan.tw/34564/" target="_blank").article
+                                img.illustration(src="source/img/mayonnaise.png", alt="")
+                                .article-img#mayonnaise-article
+                                p 日本調味料推薦【美乃滋篇】：加上這些酸甜滋味瞬間有股日本味
+                        .carousel-item
+                            a(href="https://pocketjapan.tw/34534/" target="_blank").article
+                                img.illustration(src="source/img/vinegar.png", alt="")
+                                .article-img#vinegar-article
+                                p 日本調味料推薦【醋篇】：日式獨有的酸甜醋味種類品項大公開
+                        .carousel-item
+                            a(href="https://pocketjapan.tw/34674/" target="_blank").article
+                                img.illustration(src="source/img/salt.png", alt="")
+                                .article-img#salt-article
+                                p 日本調味料推薦【鹽巴篇】：日式風味少不了這一匙！挑對鹽巴讓你一秒到日本 
+                        .carousel-item
+                            a(href="https://pocketjapan.tw/34599/" target="_blank").article
+                                img.illustration(src="source/img/sesame.png", alt="")
+                                .article-img#sesame-article
+                                p 日本調味料推薦【芝麻醬篇】：沙拉、涼拌、肉類料理不可缺的和風味
+                        .carousel-item
+                            a(href="https://pocketjapan.tw/34664/" target="_blank").article
+                                img.illustration(src="source/img/soysauce.png", alt="")
+                                .article-img#soysauce-article
+                                p 日本調味料推薦【醬油篇】：廚房有了這一瓶，各式日本料理都難不倒！
+                                
+                        .carousel-item
+                            a(href="https://pocketjapan.tw/34682/" target="_blank").article
+                                img.illustration(src="source/img/soup.png", alt="")
+                                .article-img#soup-article
+                                p 日本調味料推薦【湯底篇】：不用搭飛機～自己在家料理東西軍的必備湯底 
+                        .carousel-item
+                            a(href="https://pocketjapan.tw/34666/" target="_blank").article
+                                img.illustration(src="source/img/soba.png", alt="")
+                                .article-img#soba-article
+                                p 日本調味料推薦【炒麵醬篇】：挑戰自製日本國民美食，一定不能少了這一瓶！
+                    a.carousel-control-prev(href="#undersm-carousel" role="button" data-slide="prev")
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next(href="#undersm-carousel" role="button" data-slide="next")
+                        span.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next
+
+
+
+                .carousel.slide#oversm-carousel(data-ride="carousel")
+                    ol.carousel-indicators
+                        li.active(data-target="#oversm" data-slide-to="0")
+                        li(data-target="#oversm" data-slide-to="1")
+                        li(data-target="#oversm" data-slide-to="2")
+                        li(data-target="#oversm" data-slide-to="3")
+                        li(data-target="#oversm" data-slide-to="4")
                     .carousel-inner
                         .carousel-item.active
                             .wrap
-                                a(href="#").article.mr-4
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
-                                a(href="#").article.mr-4
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
-                                a(href="#").article
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 
+                                a(href="https://pocketjapan.tw/34727/" target="_blank").article
+                                    img.illustration(src="source/img/fish.png", alt="")
+                                    .article-img#fish-article
+                                    p 日本調味料推薦【味露篇】：取代醬油的神奇沾醬，日式料理必備這罐
+                                a(href="https://pocketjapan.tw/34437/" target="_blank").article
+                                    img.illustration(src="source/img/spicy.png", alt="")
+                                    .article-img#spicy-article
+                                    p 日本調味料推薦【辣油篇】：無辣不歡必見，日式風味各種辣度大挑戰
                         .carousel-item
                             .wrap
-                                a(href="#").article.mr-4
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
-                                a(href="#").article.mr-4
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
-                                a(href="#").article
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 
+                                a(href="https://pocketjapan.tw/34491/" target="_blank").article
+                                    img.illustration(src="source/img/sugar.png", alt="")
+                                    .article-img#sugar-article
+                                    p 日本調味料推薦【糖篇】：日本家常料理最常用的甜蜜滋味
+                                a(href="https://pocketjapan.tw/34564/" target="_blank").article
+                                    img.illustration(src="source/img/mayonnaise.png", alt="")
+                                    .article-img#mayonnaise-article
+                                    p 日本調味料推薦【美乃滋篇】：加上這些酸甜滋味瞬間有股日本味
                         .carousel-item
                             .wrap
-                                a(href="#").article.mr-4
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
-                                a(href="#").article.mr-4
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
-                                a(href="#").article
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 
+                                a(href="https://pocketjapan.tw/34534/" target="_blank").article
+                                    img.illustration(src="source/img/vinegar.png", alt="")
+                                    .article-img#vinegar-article
+                                    p 日本調味料推薦【醋篇】：日式獨有的酸甜醋味種類品項大公開
+                                a(href="https://pocketjapan.tw/34674/" target="_blank").article
+                                    img.illustration(src="source/img/salt.png", alt="")
+                                    .article-img#salt-article
+                                    p 日本調味料推薦【鹽巴篇】：日式風味少不了這一匙！挑對鹽巴讓你一秒到日本 
                         .carousel-item
                             .wrap
-                                a(href="#").article.mr-4
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
-                                a(href="#").article.mr-4
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」
-                                a(href="#").article
-                                    img.illustration(src="source/img/human3.png", alt="")
-                                    .article-img
-                                    p 日本所謂的「櫻肉」是什麼肉？如同盛開櫻花般的粉嫩「櫻肉握壽司」 
-                    a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+                                a(href="https://pocketjapan.tw/34599/" target="_blank").article
+                                    img.illustration(src="source/img/sesame.png", alt="")
+                                    .article-img#sesame-article
+                                    p 日本調味料推薦【芝麻醬篇】：沙拉、涼拌、肉類料理不可缺的和風味
+                                a(href="https://pocketjapan.tw/34664/" target="_blank").article
+                                    img.illustration(src="source/img/soysauce.png", alt="")
+                                    .article-img#soysauce-article
+                                    p 日本調味料推薦【醬油篇】：廚房有了這一瓶，各式日本料理都難不倒！ 
+                        .carousel-item
+                            .wrap
+                                a(href="https://pocketjapan.tw/34682/" target="_blank").article
+                                    img.illustration(src="source/img/soup.png", alt="")
+                                    .article-img#soup-article
+                                    p 日本調味料推薦【湯底篇】：不用搭飛機～自己在家料理東西軍的必備湯底
+                                a(href="https://pocketjapan.tw/34666/" target="_blank").article
+                                    img.illustration(src="source/img/soba.png", alt="")
+                                    .article-img#soba-article
+                                    p 日本調味料推薦【炒麵醬篇】：挑戰自製日本國民美食，一定不能少了這一瓶！
+                                             
+                    a.carousel-control-prev(href="#oversm-carousel" role="button" data-slide="prev")
                         span.carousel-control-prev-icon(aria-hidden="true")
                         span.sr-only Previous
-                    a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+                    a.carousel-control-next(href="#oversm-carousel" role="button" data-slide="next")
+                        span.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next
+                
+                
+                .carousel.slide#overmd-carousel(data-ride="carousel")
+                    ol.carousel-indicators
+                        li.active(data-target="#overmd" data-slide-to="0")
+                        li(data-target="#overmd" data-slide-to="1")
+                        li(data-target="#overmd" data-slide-to="2")
+                        li(data-target="#overmd" data-slide-to="3")
+                    .carousel-inner
+                        .carousel-item.active
+                            .wrap
+                                a(href="https://pocketjapan.tw/34727/" target="_blank").article
+                                    img.illustration(src="source/img/fish.png", alt="")
+                                    .article-img#fish-article
+                                    p 日本調味料推薦【味露篇】：取代醬油的神奇沾醬，日式料理必備這罐
+                                a(href="https://pocketjapan.tw/34437/" target="_blank").article
+                                    img.illustration(src="source/img/spicy.png", alt="")
+                                    .article-img#spicy-article
+                                    p 日本調味料推薦【辣油篇】：無辣不歡必見，日式風味各種辣度大挑戰
+                                a(href="https://pocketjapan.tw/34491/" target="_blank").article
+                                    img.illustration(src="source/img/sugar.png", alt="")
+                                    .article-img#sugar-article
+                                    p 日本調味料推薦【糖篇】：日本家常料理最常用的甜蜜滋味
+                        .carousel-item
+                            .wrap
+                                a(href="https://pocketjapan.tw/34564/" target="_blank").article
+                                    img.illustration(src="source/img/mayonnaise.png", alt="")
+                                    .article-img#mayonnaise-article
+                                    p 日本調味料推薦【美乃滋篇】：加上這些酸甜滋味瞬間有股日本味
+                                a(href="https://pocketjapan.tw/34534/" target="_blank").article
+                                    img.illustration(src="source/img/vinegar.png", alt="")
+                                    .article-img#vinegar-article
+                                    p 日本調味料推薦【醋篇】：日式獨有的酸甜醋味種類品項大公開
+                                a(href="https://pocketjapan.tw/34674/" target="_blank").article
+                                    img.illustration(src="source/img/salt.png", alt="")
+                                    .article-img#salt-article
+                                    p 日本調味料推薦【鹽巴篇】：日式風味少不了這一匙！挑對鹽巴讓你一秒到日本 
+                        .carousel-item
+                            .wrap
+                                a(href="https://pocketjapan.tw/34599/" target="_blank").article
+                                    img.illustration(src="source/img/sesame.png", alt="")
+                                    .article-img#sesame-article
+                                    p 日本調味料推薦【芝麻醬篇】：沙拉、涼拌、肉類料理不可缺的和風味
+                                a(href="https://pocketjapan.tw/34664/" target="_blank").article
+                                    img.illustration(src="source/img/soysauce.png", alt="")
+                                    .article-img#soysauce-article
+                                    p 日本調味料推薦【醬油篇】：廚房有了這一瓶，各式日本料理都難不倒！
+                                a(href="https://pocketjapan.tw/34682/" target="_blank").article
+                                    img.illustration(src="source/img/soup.png", alt="")
+                                    .article-img#soup-article
+                                    p 日本調味料推薦【湯底篇】：不用搭飛機～自己在家料理東西軍的必備湯底 
+                        .carousel-item
+                            .wrap
+                                a(href="https://pocketjapan.tw/34666/" target="_blank").article
+                                    img.illustration(src="source/img/soba.png", alt="")
+                                    .article-img#soba-article
+                                    p 日本調味料推薦【炒麵醬篇】：挑戰自製日本國民美食，一定不能少了這一瓶！
+                    a.carousel-control-prev(href="#overmd-carousel" role="button" data-slide="prev")
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next(href="#overmd-carousel" role="button" data-slide="next")
                         span.carousel-control-next-icon(aria-hidden="true")
                         span.sr-only Next
                 .logo-link
-                    img.mr-5(src="source/img/header_logo.jpg", alt="")
-                    img(src="source/img/header_logo.jpg", alt="")
+                    a(href="https://pocketjapan.tw/" target="_blank")
+                        img.mr-5(src="source/img/pocket japan logo 3.png", alt="")
+                    a(href="https://www.pecopeco.co/" target="_blank")
+                        img(src="source/img/pekopeko.png", alt="")
                 
 
 
 
         footer
-            img(src="source/img/footer_logo.jpg", alt="")
+            .wrap-outside
+                a.logo(href="https://pocketjapan.tw/" target="_blank" title="前往日本口袋首頁")
+                    img(src="source/img/pocket japan logo 2.png", alt="")
+                p 
+                .line
+                hr
+                .wrap
+                    p Follow Us On
+                    //- hr
+                    .wrap-inside
+                        a(href="https://www.facebook.com/pocketjapan.tw/" target="_blank" title="快來追蹤我們").fab.fa-facebook-f
+                        a(href="https://www.instagram.com/pocketjapan.tw/?hl=zh-tw" target="_blank" title="快來追蹤我們").fab.fa-instagram
+            p © 2020 MICROAD, INC.
+            
 
 
         script(src="javascript/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/brands.min.js")
+        script.
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
         script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
         script(src="javascript/bootstrap.min.js")
         script(src="javascript/all.js")
