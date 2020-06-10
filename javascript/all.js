@@ -107,7 +107,7 @@ $(document).ready(function(){
         // q-one
         if( $('input[name=q-one]:checked').val() == 'A'){
             A += 3;
-            D += 1;
+            D += 2;
             H += 1;
             J += 1;
             
@@ -120,13 +120,14 @@ $(document).ready(function(){
         }else if ($('input[name=q-one]:checked').val() == 'C' ){
             H += 3;
             J += 1; 
+            D += 2;
         }else if ($('input[name=q-one]:checked').val() == 'D' ){
             B += 2;
             C += 3;
             E += 5;
             F += 1; 
         }else if ($('input[name=q-one]:checked').val() == 'E' ){
-            E += 3;
+            E += 1;
             G += 3; 
             H += 3;
         };
@@ -141,14 +142,16 @@ $(document).ready(function(){
             C += 2;
             F += 2;
             G += 3; 
+            J += 2;
         }else if ($('input[name=q-two]:checked').val() == 'C' ){
+            D += 1;
             H += 1;
             I += 3;
-            J += 2; 
+            J += 1; 
         }else if ($('input[name=q-two]:checked').val() == 'D' ){
             A += 1;
             E += 1;
-            H += 3; 
+            H += 2; 
         }else if ($('input[name=q-two]:checked').val() == 'E' ){
             F += 1;
             I += 2; 
@@ -157,11 +160,11 @@ $(document).ready(function(){
         // q-three
         if( $('input[name=q-three]:checked').val() == 'A'){
             B += 3;
+            G += 2;
             I += 4;
         }else if ($('input[name=q-three]:checked').val() == 'B' ){
             A += 1;
             C += 2;
-            G += 1;
             J += 2; 
         }else if ($('input[name=q-three]:checked').val() == 'C' ){
             H += 2;
@@ -174,10 +177,10 @@ $(document).ready(function(){
 
         //q-four
         if( $('input[name=q-four]:checked').val() == 'A'){
-            C += 3;
-            E += 1;
+            C += 2;
+            E += 2;
         }else if ($('input[name=q-four]:checked').val() == 'B' ){
-            A += 1;
+            A += 2;
         }else if ($('input[name=q-four]:checked').val() == 'C' ){
             B += 1;
             F += 2;
@@ -195,9 +198,9 @@ $(document).ready(function(){
         if( $('input[name=q-five]:checked').val() == 'A'){
             A += 2;
         }else if ($('input[name=q-five]:checked').val() == 'B' ){
-            C += 2;
+            C += 0;
             E += 1;
-            G += 1;
+            G += 3;
         }else if ($('input[name=q-five]:checked').val() == 'C' ){
             B += 2;
             I += 1;
@@ -206,7 +209,8 @@ $(document).ready(function(){
             D += 3; 
             F += 2;
         }else if ($('input[name=q-five]:checked').val() == 'E' ){
-            H += 3;
+            H += 1;
+            C += 2;
         };
 
         //q-six
@@ -217,6 +221,7 @@ $(document).ready(function(){
             I += 3;
         }else if ($('input[name=q-six]:checked').val() == 'C' ){
             C += 2;
+            G += 2;
         }else if ($('input[name=q-six]:checked').val() == 'D' ){
             B += 3;
             D += 1; 
@@ -244,7 +249,7 @@ $(document).ready(function(){
             G += 1;
         };
         
-        console.log(A,B,C,D,E,F,G,H,I);
+        // console.log(A,B,C,D,E,F,G,H,I);
 
         // 依據分數更換結果
         if(A >= B && A >= C && A >= D && A >= E && A >= F && A >= G && A >= H && A >= I && A >= J) {
