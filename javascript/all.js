@@ -333,7 +333,7 @@ $(document).ready(function(){
             $('meta[property="og:image"]').attr("content", "https://upload.cc/i1/2020/06/09/ra8ZXP.png");
             $('meta[property="og:description"]').attr("content", "你是辦公室中的「日式美乃滋」，通常你是職場中公認的怪咖或者是邊緣人。但其實你只是內心已經看遍紅塵覺得職場人際關係都是浮雲，事情乖乖做好即可不需要多花力氣經營。也可能是你其實志不在此，或者真正的才華未被重用，似乎偶爾會有想跳轉的念頭唷！");
             $('meta[property="og:url"]').attr("content", "https://pocketjapan.tw/your_chomiryo#mayonnaise");
-            $('a.btn.share').attr('href','javascript:window.open("https://www.facebook.com/sharer/sharer.php?u=https://pocketjapan.tw/your_chomiryo#mayonnaise", "_blank", "toolbar=0,status=0")')
+            $('a.btn.share').attr('href','javascript:window.open("https://www.facebook.com/sharer/sharer.php?u=https://pocketjapan.tw/your_chomiryo/#mayonnaise", "_blank", "toolbar=0,status=0")')
             $('#result a.btn.link').attr('href', 'https://pocketjapan.tw/34564/');
         }else if(I >= A && I >= B && I >= C && I >= D && I >= E && I >= F && I >= G && I >= H && I >= J){
             console.log("I");
